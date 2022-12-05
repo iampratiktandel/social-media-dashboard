@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Frontend Mentor | Social Dashboard</title>
 </head>
 
@@ -15,18 +19,20 @@
     <!-- Intro Wrapper -->
     <div class="intro-wrapper">
       <div class="container">
-        <!-- Intro -->
-        <div class="intro">
-          <h1 class="intro__title">Social Media Dashboard</h1>
-          <p class="intro__info">Total Followers: 23,004</p>
+        <div class="d-flex">
+          <!-- Intro -->
+          <div class="intro">
+            <h1 class="intro__title">Social Media Dashboard</h1>
+            <p class="intro__info">Total Followers: 23,004</p>
+          </div>
+          <!-- /Intro -->
+          <!-- Theme Switcher -->
+          <div class="theme-switcher">
+            <span class="theme-switcher__title">Dark Mode</span>
+            <input type="checkbox" name="theme-switcher__btn" id="theme-toggler" onchange="toggleTheme()">
+          </div>
+          <!-- /Theme Switcher -->
         </div>
-        <!-- /Intro -->
-        <!-- Theme Switcher -->
-        <div class="theme-switcher">
-          <span class="theme-switcher__title">Dark Mode</span>
-          <input type="checkbox" name="theme-switcher__btn" id="theme-toggler">
-        </div>
-        <!-- /Theme Switcher -->
       </div>
     </div>
     <!-- /Intro Wrapper -->
@@ -292,6 +298,7 @@
     <!-- Main Wrapper -->
   </div>
   <!-- /Wrapper -->
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
