@@ -15,11 +15,11 @@
 
 <body>
   <!-- Wrapper -->
-  <div class="wrapper">
+  <div class="wrapper d-flex flex-col">
     <!-- Intro Wrapper -->
     <div class="intro-wrapper">
       <div class="container">
-        <div class="d-flex">
+        <div class="intro__content-wrapper d-flex">
           <!-- Intro -->
           <div class="intro">
             <h1 class="intro__title">Social Media Dashboard</h1>
@@ -39,12 +39,12 @@
 
     <!-- Main Wrapper -->
     <div class="main-wrapper">
-      <div class="container">
+      <div class="container cards-container">
         <!-- Social Media Cards -->
-        <div class="social-media-cards">
+        <div class="social-media-cards d-grid">
           <!-- Social Media Card -->
-          <div class="social-media-card">
-            <div class="social-media-card__account">
+          <div class="social-media-card d-flex flex-col justify-content-center align-items-center">
+            <div class="social-media-card__account d-flex justify-content-center">
               <span class="social-media-card__account-logo">
                 <img src="./images/icon-facebook.svg" alt="Facebook logo">
               </span>
@@ -56,14 +56,14 @@
               <span class="social-media-card__account-stats__wrapper">
                 <img class="social-media-card__account-stats__logo" src="./images/icon-up.svg" alt="up arrow">
               </span>
-              <span class="social-media-card__account-stats__info">12 Today</span>
+              <span class="social-media-card__account-stats__info stats-up">12 Today</span>
             </div>
           </div>
           <!-- /Social Media Card -->
 
           <!-- Social Media Card -->
-          <div class="social-media-card">
-            <div class="social-media-card__account">
+          <div class="social-media-card d-flex flex-col justify-content-center align-items-center">
+            <div class="social-media-card__account d-flex">
               <span class="social-media-card__account-logo">
                 <img src="./images/icon-twitter.svg" alt="Twitter logo">
               </span>
@@ -75,14 +75,14 @@
               <span class="social-media-card__account-stats__wrapper">
                 <img class="social-media-card__account-stats__logo" src="./images/icon-up.svg" alt="up arrow">
               </span>
-              <span class="social-media-card__account-stats__info">99 Today</span>
+              <span class="social-media-card__account-stats__info stats-up">99 Today</span>
             </div>
           </div>
           <!-- /Social Media Card -->
 
           <!-- Social Media Card -->
-          <div class="social-media-card">
-            <div class="social-media-card__account">
+          <div class="social-media-card d-flex flex-col justify-content-center align-items-center">
+            <div class="social-media-card__account d-flex">
               <span class="social-media-card__account-logo">
                 <img src="./images/icon-instagram.svg" alt="Instagram logo">
               </span>
@@ -94,26 +94,26 @@
               <span class="social-media-card__account-stats__wrapper">
                 <img class="social-media-card__account-stats__logo" src="./images/icon-up.svg" alt="up arrow">
               </span>
-              <span class="social-media-card__account-stats__info">1099 Today</span>
+              <span class="social-media-card__account-stats__info stats-up">1099 Today</span>
             </div>
           </div>
           <!-- /Social Media Card -->
 
           <!-- Social Media Card -->
-          <div class="social-media-card">
-            <div class="social-media-card__account">
+          <div class="social-media-card d-flex flex-col justify-content-center align-items-center">
+            <div class="social-media-card__account d-flex">
               <span class="social-media-card__account-logo">
                 <img src="./images/icon-youtube.svg" alt="YouTube logo">
               </span>
               <p class="social-media-card__account-username">Nathan F.</p>
             </div>
-            <p class="social-media-card__account-followers-count">11k</p>
+            <p class="social-media-card__account-followers-count">8239</p>
             <p class="social-media-card__account-followers-title">Subscribers</p>
             <div class="social-media-card__account-stats">
               <span class="social-media-card__account-stats__wrapper">
                 <img class="social-media-card__account-stats__logo" src="./images/icon-down.svg" alt="down arrow">
               </span>
-              <span class="social-media-card__account-stats__info">144 Today</span>
+              <span class="social-media-card__account-stats__info stats-down">144 Today</span>
             </div>
           </div>
           <!-- /Social Media Card -->
@@ -124,162 +124,162 @@
         <div class="overview">
           <h2 class="overview__title">Overview - Today</h2>
           <!-- Overview Cards -->
-          <div class="overview-cards">
+          <div class="overview-cards d-grid">
             <!-- Overview Card -->
-            <div class="overview-card">
-              <div class="overview-card__intro">
+            <div class="overview-card d-flex flex-col">
+              <div class="overview-card__intro d-flex flex-row justify-content-between align-items-center">
                 <p class="overview-card__intro-title">Page Views</p>
                 <span class="overview-card__intro-logo__wrapper">
                   <img class="overview-card__intro-logo" src="./images/icon-facebook.svg" alt="Facebook logo">
                 </span>
               </div>
-              <div class="overview-card__stats">
+              <div class="overview-card__stats d-flex flex-row justify-content-between align-items-end">
                 <p class="overview-card__stats-count">87</p>
                 <div>
                   <span class="overview-card__stats__logo-wrapper">
                     <img class="overview-card__stats__logo" src="./images/icon-up.svg" alt="up arrow">
                   </span>
-                  <span class="overview-card__stats__info">3%</span>
+                  <span class="overview-card__stats__info stats-up">3%</span>
                 </div>
               </div>
             </div>
             <!-- /Overview Card -->
 
             <!-- Overview Card -->
-            <div class="overview-card">
-              <div class="overview-card__intro">
+            <div class="overview-card d-flex flex-col">
+              <div class="overview-card__intro d-flex flex-row justify-content-between align-items-center">
                 <p class="overview-card__intro-title">Likes</p>
                 <span class="overview-card__intro-logo__wrapper">
                   <img class="overview-card__intro-logo" src="./images/icon-facebook.svg" alt="Facebook logo">
                 </span>
               </div>
-              <div class="overview-card__stats">
+              <div class="overview-card__stats d-flex flex-row justify-content-between align-items-end">
                 <p class="overview-card__stats-count">52</p>
                 <div>
                   <span class="overview-card__stats__logo-wrapper">
                     <img class="overview-card__stats__logo" src="./images/icon-down.svg" alt="down arrow">
                   </span>
-                  <span class="overview-card__stats__info">2%</span>
+                  <span class="overview-card__stats__info stats-down">2%</span>
                 </div>
               </div>
             </div>
             <!-- /Overview Card -->
 
             <!-- Overview Card -->
-            <div class="overview-card">
-              <div class="overview-card__intro">
+            <div class="overview-card d-flex flex-col">
+              <div class="overview-card__intro d-flex flex-row justify-content-between align-items-center">
                 <p class="overview-card__intro-title">Likes</p>
                 <span class="overview-card__intro-logo__wrapper">
                   <img class="overview-card__intro-logo" src="./images/icon-instagram.svg" alt="Instagram logo">
                 </span>
               </div>
-              <div class="overview-card__stats">
+              <div class="overview-card__stats d-flex flex-row justify-content-between align-items-end">
                 <p class="overview-card__stats-count">5462</p>
                 <div>
                   <span class="overview-card__stats__logo-wrapper">
                     <img class="overview-card__stats__logo" src="./images/icon-up.svg" alt="up arrow">
                   </span>
-                  <span class="overview-card__stats__info">2257%</span>
+                  <span class="overview-card__stats__info stats-up">2257%</span>
                 </div>
               </div>
             </div>
             <!-- /Overview Card -->
 
             <!-- Overview Card -->
-            <div class="overview-card">
-              <div class="overview-card__intro">
+            <div class="overview-card d-flex flex-col">
+              <div class="overview-card__intro d-flex flex-row justify-content-between align-items-center">
                 <p class="overview-card__intro-title">Profile Views</p>
                 <span class="overview-card__intro-logo__wrapper">
                   <img class="overview-card__intro-logo" src="./images/icon-instagram.svg" alt="Instagram logo">
                 </span>
               </div>
-              <div class="overview-card__stats">
+              <div class="overview-card__stats d-flex flex-row justify-content-between align-items-end">
                 <p class="overview-card__stats-count">52k</p>
                 <div>
                   <span class="overview-card__stats__logo-wrapper">
                     <img class="overview-card__stats__logo" src="./images/icon-up.svg" alt="up arrow">
                   </span>
-                  <span class="overview-card__stats__info">1375%</span>
+                  <span class="overview-card__stats__info stats-up">1375%</span>
                 </div>
               </div>
             </div>
             <!-- /Overview Card -->
 
             <!-- Overview Card -->
-            <div class="overview-card">
-              <div class="overview-card__intro">
+            <div class="overview-card d-flex flex-col">
+              <div class="overview-card__intro d-flex flex-row justify-content-between align-items-center">
                 <p class="overview-card__intro-title">Retweets</p>
                 <span class="overview-card__intro-logo__wrapper">
                   <img class="overview-card__intro-logo" src="./images/icon-twitter.svg" alt="Twitter logo">
                 </span>
               </div>
-              <div class="overview-card__stats">
+              <div class="overview-card__stats d-flex flex-row justify-content-between align-items-end">
                 <p class="overview-card__stats-count">117</p>
                 <div>
                   <span class="overview-card__stats__logo-wrapper">
                     <img class="overview-card__stats__logo" src="./images/icon-up.svg" alt="up arrow">
                   </span>
-                  <span class="overview-card__stats__info">303%</span>
+                  <span class="overview-card__stats__info stats-up">303%</span>
                 </div>
               </div>
             </div>
             <!-- /Overview Card -->
 
             <!-- Overview Card -->
-            <div class="overview-card">
-              <div class="overview-card__intro">
+            <div class="overview-card d-flex flex-col">
+              <div class="overview-card__intro d-flex flex-row justify-content-between align-items-center">
                 <p class="overview-card__intro-title">Likes</p>
                 <span class="overview-card__intro-logo__wrapper">
                   <img class="overview-card__intro-logo" src="./images/icon-twitter.svg" alt="Twitter logo">
                 </span>
               </div>
-              <div class="overview-card__stats">
+              <div class="overview-card__stats d-flex flex-row justify-content-between align-items-end">
                 <p class="overview-card__stats-count">507</p>
                 <div>
                   <span class="overview-card__stats__logo-wrapper">
                     <img class="overview-card__stats__logo" src="./images/icon-up.svg" alt="up arrow">
                   </span>
-                  <span class="overview-card__stats__info">553%</span>
+                  <span class="overview-card__stats__info stats-up">553%</span>
                 </div>
               </div>
             </div>
             <!-- /Overview Card -->
 
             <!-- Overview Card -->
-            <div class="overview-card">
-              <div class="overview-card__intro">
+            <div class="overview-card d-flex flex-col">
+              <div class="overview-card__intro d-flex flex-row justify-content-between align-items-center">
                 <p class="overview-card__intro-title">Likes</p>
                 <span class="overview-card__intro-logo__wrapper">
                   <img class="overview-card__intro-logo" src="./images/icon-youtube.svg" alt="YouTube logo">
                 </span>
               </div>
-              <div class="overview-card__stats">
+              <div class="overview-card__stats d-flex flex-row justify-content-between align-items-end">
                 <p class="overview-card__stats-count">107</p>
                 <div>
                   <span class="overview-card__stats__logo-wrapper">
                     <img class="overview-card__stats__logo" src="./images/icon-down.svg" alt="down arrow">
                   </span>
-                  <span class="overview-card__stats__info">19%</span>
+                  <span class="overview-card__stats__info stats-down">19%</span>
                 </div>
               </div>
             </div>
             <!-- /Overview Card -->
 
             <!-- Overview Card -->
-            <div class="overview-card">
-              <div class="overview-card__intro">
+            <div class="overview-card d-flex flex-col">
+              <div class="overview-card__intro d-flex flex-row justify-content-between align-items-center">
                 <p class="overview-card__intro-title">Total Views</p>
                 <span class="overview-card__intro-logo__wrapper">
                   <img class="overview-card__intro-logo" src="./images/icon-youtube.svg" alt="YouTube logo">
                 </span>
               </div>
-              <div class="overview-card__stats">
+              <div class="overview-card__stats d-flex flex-row justify-content-between align-items-end">
                 <p class="overview-card__stats-count">1407</p>
                 <div>
                   <span class="overview-card__stats__logo-wrapper">
                     <img class="overview-card__stats__logo" src="./images/icon-down.svg" alt="down arrow">
                   </span>
-                  <span class="overview-card__stats__info">12%</span>
+                  <span class="overview-card__stats__info stats-down">12%</span>
                 </div>
               </div>
             </div>

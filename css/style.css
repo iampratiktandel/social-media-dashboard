@@ -46,7 +46,16 @@ body {
 body {
   font-family: "Inter", sans-serif;
   font-size: 14px;
+  font-weight: 400;
   color: var(--color-primary);
+}
+
+.stats-up {
+  color: var(--color-lime-green);
+}
+
+.stats-down {
+  color: var(--color-bright-red);
 }
 /* Base Styles */
 
@@ -67,26 +76,149 @@ body {
   justify-content: center;
 }
 
+.justify-content-between {
+  justify-content: space-between;
+}
+
 .align-items-center {
   align-items: center;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.d-grid {
+  display: grid;
 }
 /* /Custom Classes */
 
 /* Wrappers */
-/* Intro */
+.wrapper {
+  height: 100%;
+}
+
 .intro-wrapper {
   background-color: var(--color-bg-secondary);
+  padding-bottom: 120px;
 }
-/* /Intro */
 
-/* Main */
 .main-wrapper {
   background-color: var(--color-bg-primary);
+  flex-grow: 1;
 }
-/* /Main */
 
 .container {
-  max-width: 1260px;
+  max-width: 1240px;
   margin: 0 auto;
+  padding: 0 30px;
+}
+
+.cards-container {
+  transform: translateY(-110px);
 }
 /* /Wrappers */
+
+/* /Intro */
+.intro__content-wrapper {
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.intro__info,
+.theme-switcher__title {
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+/* Intro */
+
+/* Main */
+/* Social Media Cards */
+.social-media-cards {
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+}
+
+.social-media-card {
+  background-color: var(--color-card-bg);
+  padding: 30px 60px;
+  border-radius: 5px;
+}
+
+.social-media-card__account {
+  margin-bottom: 20px;
+}
+
+.social-media-card__account-logo {
+  margin-right: 10px;
+}
+
+.social-media-card__account-username,
+.social-media-card__account-followers-title {
+  color: var(--color-secondary);
+}
+
+.social-media-card__account-username {
+  font-weight: 700;
+}
+
+.social-media-card__account-followers-count {
+  font-size: 54px;
+  font-weight: 700;
+}
+
+.social-media-card__account-followers-title {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+.social-media-card__account-stats__info {
+  font-size: 12px;
+  font-weight: 700;
+}
+/* /Social Media Cards */
+
+/* Overview Cards */
+.overview {
+  padding-top: 50px;
+}
+
+.overview__title {
+  padding-bottom: 20px;
+}
+
+.overview-cards {
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  row-gap: 25px;
+}
+
+.overview-card {
+  background-color: var(--color-card-bg);
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.overview-card__intro {
+  padding-bottom: 20px;
+}
+
+.overview-card__intro-title {
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+.overview-card__stats-count {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.overview-card__stats__info {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* /Overview Cards */
+/* Main */
