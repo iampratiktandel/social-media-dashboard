@@ -27,9 +27,12 @@
           </div>
           <!-- /Intro -->
           <!-- Theme Switcher -->
-          <div class="theme-switcher">
-            <span class="theme-switcher__title">Dark Mode</span>
-            <input type="checkbox" name="theme-switcher__btn" id="theme-toggler" onchange="toggleTheme()">
+          <div class="theme__switch d-flex justify-content-center align-items-center">
+            <span class="switch__title">Dark Mode</span>
+            <label class="switch">
+              <input type="checkbox" name="theme-switcher__btn" id="theme-toggler" onchange="toggleTheme()">
+              <span class="slider round"></span>
+            </label>
           </div>
           <!-- /Theme Switcher -->
         </div>
@@ -43,7 +46,8 @@
         <!-- Social Media Cards -->
         <div class="social-media-cards d-grid">
           <!-- Social Media Card -->
-          <div class="social-media-card d-flex flex-col justify-content-center align-items-center">
+          <div class="social-media-card d-flex flex-col justify-content-start align-items-center">
+            <div class="social-media-card__border fb-card"></div>
             <div class="social-media-card__account d-flex justify-content-center">
               <span class="social-media-card__account-logo">
                 <img src="./images/icon-facebook.svg" alt="Facebook logo">
@@ -62,7 +66,8 @@
           <!-- /Social Media Card -->
 
           <!-- Social Media Card -->
-          <div class="social-media-card d-flex flex-col justify-content-center align-items-center">
+          <div class="social-media-card d-flex flex-col justify-content-start align-items-center">
+            <div class="social-media-card__border twitter-card"></div>
             <div class="social-media-card__account d-flex">
               <span class="social-media-card__account-logo">
                 <img src="./images/icon-twitter.svg" alt="Twitter logo">
@@ -81,7 +86,8 @@
           <!-- /Social Media Card -->
 
           <!-- Social Media Card -->
-          <div class="social-media-card d-flex flex-col justify-content-center align-items-center">
+          <div class="social-media-card d-flex flex-col justify-content-start align-items-center">
+            <div class="social-media-card__border insta-card"></div>
             <div class="social-media-card__account d-flex">
               <span class="social-media-card__account-logo">
                 <img src="./images/icon-instagram.svg" alt="Instagram logo">
@@ -100,7 +106,8 @@
           <!-- /Social Media Card -->
 
           <!-- Social Media Card -->
-          <div class="social-media-card d-flex flex-col justify-content-center align-items-center">
+          <div class="social-media-card d-flex flex-col justify-content-start align-items-center">
+            <div class="social-media-card__border youtube-card"></div>
             <div class="social-media-card__account d-flex">
               <span class="social-media-card__account-logo">
                 <img src="./images/icon-youtube.svg" alt="YouTube logo">
